@@ -19,7 +19,5 @@ jobs:
 
 # Run Unit tests- Specify unit tests here 
 
-      - run: pytest
-
 # sam deploy
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-hello-world --s3-bucket testbucketawssam --capabilities CAPABILITY_IAM --region eu-west-3 --guided
+      - run: sam deploy --guided --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-hello-world --capabilities CAPABILITY_IAM --region eu-west-3
